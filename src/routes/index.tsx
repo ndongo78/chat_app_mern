@@ -1,6 +1,7 @@
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import StackNavigator from '../navigation/StackNagivator.tsx';
 import {StatusBar} from 'react-native';
+import HomeStack from "../navigation/HomeStack.tsx";
 
 const Routes = () => {
   const Mytheme = {
@@ -18,7 +19,7 @@ const Routes = () => {
         barStyle={'light-content'}
         backgroundColor={Mytheme.colors.background}
       />
-      <StackNavigator />
+      <HomeStack />
     </NavigationContainer>
   );
 };
